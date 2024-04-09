@@ -4,7 +4,5 @@
 
 <main>
 
-    @php
-        var_dump($series)
-    @endphp
+
 </main>

@@ -1,6 +1,10 @@
 <?php
 
 return [
+    'links' => [
+        'characters', 'comics', 'movies', 'tv', 'games', 'collectibles', 'videos', 'fans', 'news', 'shop',
+    ],
+
     'series' => [
     [
         "title" => "Action Comics #1000: The Deluxe Edition",

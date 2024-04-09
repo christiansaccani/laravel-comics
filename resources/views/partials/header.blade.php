@@ -1,16 +1,17 @@
-{{-- <header>
-    <nav>
-        <div id="nav-container">
-            <img id="logo" src="/img/dc-logo.png">
-            <div id="menu">
-                <ul>
-                    <li v-for="(currentLink, index) in links"
-                    @click="changeActiveIndex(index)"
-                    :class="{'active': index === activeIndex}">
-                        {{ currentLink }}
-                    </li>
-                </ul>
-            </div>
+
+
+<nav>
+    <div id="nav-container">
+        <img id="logo" src="/img/dc-logo.png">
+        <div id="menu">
+            <ul class="links">
+                @foreach ($links as $link)
+                <li>
+                    {{ $link }}
+            
+                </li>
+                @endforeach
+            </ul>
         </div>
-    </nav>
-</header> --}}
+    </div>
+</nav>

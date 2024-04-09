@@ -14,10 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $links = config("db.links");
 
-    $series = config("db.series");
-
-    return view('home', compact('series'));
+    return view('home', compact('links'));
 
 })->name('home');;
