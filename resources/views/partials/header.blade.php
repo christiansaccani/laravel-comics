@@ -3,9 +3,9 @@
         <img id="logo" src="{{ Vite::asset('resources/img/dc-logo.png') }}">
         <div id="menu">
             <ul class="links">
-                @foreach ($links as $link)
+                @foreach ($navs as $nav)
                 <li>
-                    {{ $link }}          
+                    {{ $nav }}          
                 </li>
                 @endforeach
             </ul>

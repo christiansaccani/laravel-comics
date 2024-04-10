@@ -14,10 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $links = config("db.links");
+    $navs = config("db.navs");
     $series = config("db.series");
     $medias = config("db.medias");
+    $links = config("db.links");
 
-    return view('home', compact('links', 'series', 'medias'));
+    return view('home', compact('navs', 'series', 'medias', 'links'));
 
 })->name('home');;

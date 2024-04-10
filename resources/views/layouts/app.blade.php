@@ -13,6 +13,7 @@
     @include('partials/header')
     @include('partials/content')
     @include('partials/media')
+    @include('partials/link')
 
     @yield('content')
     
