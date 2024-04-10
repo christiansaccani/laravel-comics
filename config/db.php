@@ -114,6 +114,30 @@ return [
         "sale_date" => "2019-04-10",
         "type" => "graphic novel",
     ]
-    ]
-];
+    ],
 
+
+    'medias' => [
+        [
+            'img' => "resources/img/buy-comics-digital-comics.png",
+            'title' => "digital comics"
+        ],
+        [
+            'img' => "resources/img/buy-comics-merchandise.png",
+            'title' => "dc merchandise"
+        ],
+        [
+            'img' => "resources/img/buy-comics-subscriptions.png",
+            'title' => "subscription"
+        ],
+        [
+            'img' => "resources/img/buy-comics-shop-locator.png",
+            'title' => "comic shop locator"
+        ],
+        [
+            'img' => "resources/img/buy-dc-power-visa.svg",
+            'title' => "dc power visa"
+        ],
+    ],
+
+];

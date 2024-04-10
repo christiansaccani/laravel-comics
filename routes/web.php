@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $links = config("db.links");
     $series = config("db.series");
+    $medias = config("db.medias");
 
-    return view('home', compact('links', 'series'));
+    return view('home', compact('links', 'series', 'medias'));
 
 })->name('home');;

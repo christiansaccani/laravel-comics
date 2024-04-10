@@ -5,8 +5,7 @@
             <ul class="links">
                 @foreach ($links as $link)
                 <li>
-                    {{ $link }}
-            
+                    {{ $link }}          
                 </li>
                 @endforeach
             </ul>

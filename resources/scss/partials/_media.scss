@@ -1,0 +1,35 @@
+#mediaSection {
+    @include centered;
+
+    height: 155px;
+    width: 100%;
+
+    background-color: $primaryColor;
+    color: white;
+    
+    div {
+        @include maxwidthed($maxWidth);
+        width: 100%;
+
+        font-size: medium;
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            li {
+                display: flex;
+                align-items: center;
+                gap: 1em;
+
+                list-style: none;
+                text-transform: uppercase;
+
+                img {
+                    height: 60px;
+                }
+            }
+        }
+    }
+}
