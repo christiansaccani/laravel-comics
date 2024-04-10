@@ -2,7 +2,7 @@
 
 <nav>
     <div id="nav-container">
-        <img id="logo" src="/img/dc-logo.png">
+        <img id="logo" src="{{ Vite::asset('resources/img/dc-logo.png') }}">
         <div id="menu">
             <ul class="links">
                 @foreach ($links as $link)

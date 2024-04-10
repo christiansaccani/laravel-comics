@@ -1,0 +1,10 @@
+@mixin centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+};
+
+@mixin maxwidthed($maxWidth) {
+    max-width: $maxWidth;
+    margin: 0 10px;
+}
