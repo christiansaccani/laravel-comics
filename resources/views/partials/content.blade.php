@@ -1,5 +1,5 @@
 <section id="contentSection">
-    <img src="/img/jumbotron.jpg" alt="">
+    <img src={{ Vite::asset('resources/img/jumbotron.jpg') }} alt="">
     <div>
         <div id="current-series">
             current series
@@ -8,7 +8,7 @@
         <div id="comic-list">
             @foreach ($series as $serie)
                 <div class="comic">
-                    <img :src="{{$serie['thumb']}}" :alt="{{$serie['title']}}">
+                    <img src="{{ $serie['thumb'] }}" alt="{{ $serie['title'] }}">
                     <p>{{ $serie['title'] }}</p>
                 </div>
             @endforeach
