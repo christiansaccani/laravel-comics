@@ -11,11 +11,11 @@
 <body>
 
     @include('partials/header')
-    @include('partials/content')
-    @include('partials/media')
-    @include('partials/link')
 
     @yield('content')
+    
+    @include('partials/link')
+    @include('partials/social')
     
 </body>
 </html>

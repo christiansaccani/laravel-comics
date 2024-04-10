@@ -2,7 +2,7 @@
 
 @section('content')
 
-@include('partials/content')
+@include('partials/singlepage')
 @include('partials/media')
 
 @endsection

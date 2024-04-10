@@ -158,4 +158,6 @@ return [
             'actions' => ["DC", "MAD Magazine", "DC Kids", "DC Universe", "DC Power Visa"]
         ],
     ],
+
+    'socials' => ["resources/img/footer-facebook.png", "resources/img/footer-twitter.png", "resources/img/footer-youtube.png", "resources/img/footer-pinterest.png", "resources/img/footer-periscope.png"],
 ];

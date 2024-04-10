@@ -18,7 +18,22 @@ Route::get('/', function () {
     $series = config("db.series");
     $medias = config("db.medias");
     $links = config("db.links");
+    $socials = config("db.socials");
 
-    return view('home', compact('navs', 'series', 'medias', 'links'));
+    return view('home', compact('navs', 'series', 'medias', 'links', 'socials'));
 
 })->name('home');;
+
+Route::get('/single', function () {
+    $navs = config("db.navs");
+
+    $series = config("db.series");
+    $singleserie = $series[0];
+
+    $medias = config("db.medias");
+    $links = config("db.links");
+    $socials = config("db.socials");
+
+    return view('single', compact('navs', 'links', 'socials', 'singleserie', 'medias'));
+
+})->name('single');;
